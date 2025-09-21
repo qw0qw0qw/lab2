@@ -1,0 +1,13 @@
+#include <locale.h>
+#include <stdio.h>
+float n = 11;
+float k = 2;
+int main()
+{
+	setlocale(LC_ALL, "RUS");
+	printf("Ñåé÷àñ %.0f ÷àñîâ, %.0f ìèíóò, 00 ñåêóíä\n", n, k);
+	printf("Èä¸ò %.0f ìèíóòà\n", k);
+	printf("Äî ïîëóíî÷è îñòàëîñü %.0f ÷àñîâ è %.0f ìèíóò\n", 23 - n, 60 - k);
+	printf("Ñ 8.00 ïğîøëî %.0f ñåêóíä\n", ((n * 60.) + k) * 60.);
+	printf("Òåêóùèé ÷àñ = %3.2f ñóòîê è òåêóùàÿ ìèíóòà = %4.3f ÷àñà\n", n / 24, k / 60);
+}
